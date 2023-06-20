@@ -100,15 +100,18 @@ table#tabela_legal td{
  
 }
 table#tabela_legal td.ce{
-color: white;
-background-color: #606060;
-vertical-align: top;
-font-weight: bold;
+	color: white;
+	background-color: #606060;
+	vertical-align: top;
+	font-weight: bold;
+
+
 }
 table#tabela_legal td.cd{
 	background-color: #cecece;
 
-}table#tabela_legal caption{
+}
+table#tabela_legal caption{
 	color: #888888;
 	font-size: 14pt;
 	font-weight: bolder;
@@ -151,8 +154,8 @@ footer p{
 }
 header#cabecalho img#icone{
 	position: absolute;
-	left: 950px;
-	top:  80px;
+	left: 1050px;
+	top:  40px;
 }
 header#cabecalho {
 	border-bottom: 1px #606060 solid;

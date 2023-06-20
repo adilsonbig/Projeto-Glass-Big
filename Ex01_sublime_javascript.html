@@ -1,0 +1,27 @@
+<!Doctype html>
+ <html lang="pt-BR">
+   <head>
+   	 <meta charset='utf-8'>
+   	  <title>Projeto_sublime_JavaScript</title>
+
+    </head>
+    <body>
+    	<!--JS codigo 01 = document.write("Olá! Hoje é dia " + Date()); -->
+    	<!-- JS codigo 02 = <img src="imagen_sublime/lampada-apagada.jpg" onclick="acendeLampada()"/> -->
+    	<script>
+    	    function acendeLampada() {
+    	    	document.getElementById("luz").src = "imagen_sublime/lampada-acesa.jpg";
+    	    }
+    	    function apagaLampada () {
+    	    	document.getElementById("luz").src = "imagen_sublime/lampada-apagada.jpg";
+    	    }
+    	    function quebraLampada () {
+    	    	document.getElementById("luz").src = "imagen_sublime/lampada-quebrada.jpg";
+    	    } 
+    	    
+    	</script>
+    	<img src="imagen_sublime/lampada-apagada.jpg" id="luz" onmousemove="acendeLampada()" onmouseout="apagaLampada()" onclick="quebraLampada()"/>
+    	
+    </body>
+  </html>
+
