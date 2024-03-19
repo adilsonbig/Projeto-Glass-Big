@@ -4,7 +4,7 @@
    	 <meta charset='utf-8'>
    	  <title>Projeto 01 Sublime</title>
       <link rel="stylesheet"  type="text/css"  href="ex03.css">   	  
-
+      <link rel="stylesheet" href="specs.css">
    </head>
     <script src="Ex01.js"></script>
     <body>
@@ -29,15 +29,31 @@
   </ul>
    </nav>
         </header>
-		
-	Glass > Especificações
-	Raio-X no Google Glass
-	por Gustavo Guanabara
-	Atualizado em 01/Maio/2013
+	<section id="corpo-full">
+    <article id="noticia-principal">
+      <header id="cabecalho-artigo">
+   <hgroup>
+  <h3>Glass > Especificações</h3>
+  <h1>Raio-X no Google Glass</h1>
+  <h2>por Gustavo Guanabara</h2>
+
+  <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+   </hgroup>
+  </header>
+	<p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
 	
-	Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.
-	
-	[AQUI ENTRA UMA IMAGEM]
+	<section id="conteudo">
+    <img src="imagen_sublime/glass-esquema-marcado.jpg"  usemap="#meumapa" alt="imagem esquema Google Glass">
+    <map name="meumapa">
+      <area shape="rect" coords="179,203, 274,247" href="gogle_glass.html#tela" target="janela"/>
+      <area shape="circle" coords="157,244,10" href="gogle_glass.html#camera" target="janela"/>
+      <area shape="circle" coords="74,53,14" href="gogle_glass.html#gadgets" target="janela"/>
+      <area shape="rect" coords="27,151,83,252" href="gogle_glass.html#sensores" target="janela"/>
+    </map>
+    <iframe src="gogle_glass.html" name="janela" id="frame-spec"></iframe>
+  </section>
+  </article>
+  </section>
 	
 	<footer id="rodape">
 		<p>Copyright 2013 - by Gustavo Guanabara</br>
