@@ -217,7 +217,11 @@ figure.foto-legenda figcaption{
 figure.foto-legenda:hover figcaption{
 	opacity: 0.6;
 }
-#filme3 {
+#filme1 {
 	width: 390px;
+	height: 224px;
+}
+#filme1poster {
+	width: 200px;
 	height: 224px;
 }
