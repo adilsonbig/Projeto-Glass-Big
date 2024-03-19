@@ -7,13 +7,13 @@ body {
 }
 div#interface{
 	width: 900px;
-	
 	background-color: white;
 	margin: -8px auto 0px auto;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
 	padding: 10px 10px 10px 10px;
 }
-a{
+a
+{
 	color: #606060;
 	text-decoration: none;
 }
@@ -105,8 +105,8 @@ table#tabela_legal td.ce{
 	vertical-align: top;
 	font-weight: bold;
 
-
 }
+
 table#tabela_legal td.cd{
 	background-color: #cecece;
 
@@ -156,6 +156,7 @@ header#cabecalho img#icone{
 	position: absolute;
 	left: 1050px;
 	top:  40px;
+	width: 150px;
 }
 header#cabecalho {
 	border-bottom: 1px #606060 solid;
