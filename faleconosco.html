@@ -7,6 +7,13 @@
 		<link rel="stylesheet" href="midia.css">
 	 </head>
 	  <script src="Ex01.js"></script>
+	  <script>
+		function calc_total() {
+			var qtd = parseInt(document.getElementById('cQtd').value);
+			tot = qtd * 1500;
+			document.getElementById('cTot').value = tot;
+		}
+	  </script>
 	  <body>
 		<div id='interface'>
 		  <header id='cabecalho'>
@@ -40,7 +47,7 @@
 		  <h3 class="direita">Atualizado em 01/Maio/2013</h3>
 		   </hgroup>
 		  </header>
-		<form method="post" id="fContato" action="mailto:adilson976431@gmail.com">
+		<form method="post" id="fContato" action="mailto:adilson976431@gmail.com" oninput="calc_total();">
 			<fieldset id="usuario">
 	<legend>Identificação do Usuário</legend>
 		<p>Nome: <input type="text" name="tnome" id="cnome" size="20" maxlength="10" placeholder="nome completo"></p>
@@ -89,13 +96,19 @@
 	</fieldset>
 	<fieldset id="pedido">
 		<legend>Quero um Google Glass</legend>
-		<p><label for="cPed" >Gostaria de adquirir um Google Glass quando disponível</label></p>
-		<p><label for="cCor" >Cor:</label></p>
-		<p><label for="cQtd" >Quantidade:</label></p>
-		<p><label for="cTot" >Preço Total: R$</label></p>
+		<p>
+			<input type="checkbox" name="tPed" id="cPed"/>
+			<label for="cPed" >Gostaria de adquirir um Google Glass quando disponível</label></p>
+		<p>
+			<input type="color" name="tCor" id="cCor" value="#000000"><label for="cCor"/>Cor:</label></p>
+		<p><label for="cQtd" >Quantidade:</label>
+		<input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0"/></p>
+		<p><label for="cTot" >Preço Total: R$</label>
+		<input type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly/></p>
 	</fieldset>
 	
-	[BOTÃO ENVIAR]
+	<input type="submit" value="enviar">
+	<input type="image" src="imagen_sublime/imagem de botão.png">
 	</form>
 </article>
 </section>
