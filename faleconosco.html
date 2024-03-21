@@ -1,12 +1,111 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet"  type="text/css"  href="ex03.css">
-	<title>FALE COM AGENTE</title>
-</head>
-<body>
- FALE CONOSCO
+<DOCTYPE.html>
+	<html lang="pt-BR">
+	 <head>
+		  <meta charset='utf-8'>
+		   <title>Projeto 01 Sublime</title>
+		<link rel="stylesheet"  type="text/css"  href="ex03.css">   	  
+		<link rel="stylesheet" href="midia.css">
+	 </head>
+	  <script src="Ex01.js"></script>
+	  <body>
+		<div id='interface'>
+		  <header id='cabecalho'>
+		<hgroup>       	  
+			<h1>Google Glass</h1>
+		  <h2>A revolução do Google está chegando</h2>
+		  <div id="logo1">
+		  <img src="imagen_sublime/glass-logo-peq.jpg">
+		 </div>
+		</hgroup>
+  <img id="icone" src="imagen_sublime/contato.png">
+   <nav class="menu">
+   <h1>Menu Principal</h1>
+   <ul type=" disc">
+	 <li onmouseover="mudaFoto('imagen_sublime/home.png')" onmouseout="mudaFoto('imagen_sublime/contato.png')"><a href="index.html">Home</a></li>
+	 <li onmouseover="mudaFoto('imagen_sublime/especificacoes-02.png')" onmouseout="mudaFoto('imagen_sublime/contato.png')"><a href="especificações.html">Especificações</a></li>
+	 <li onmouseover="mudaFoto('imagen_sublime/fotos.png')" onmouseout="mudaFoto('imagen_sublime/contato.png')"><a href="album.html">Fotos</a></li>
+	 <li onmouseover="mudaFoto('imagen_sublime/multimidia.png')" onmouseout="mudaFoto('imagen_sublime/contato.png')"><a href="multimidia.html">Multimídia</a></li>    
+	 <li onmouseover="mudaFoto('imagen_sublime/contato.png')" onmouseout="mudaFoto('imagen_sublime/contato.png')"><a href="faleconosco.html">Fale conosco</a></li>
+	</ul>
+	 </nav>
+		  </header>
+		  <section id="corpo-full">
+			<article id="noticia-principal">
+			  <header id="cabecalho-artigo">
+		   <hgroup>
+		  <h3>Fale Conosco > Contato</h3>
+		  <h1>Formulário de Contato</h1>
+		  <h2>por Gustavo Guanabara</h2>
+		
+		  <h3 class="direita">Atualizado em 01/Maio/2013</h3>
+		   </hgroup>
+		  </header>
+		<form method="post" id="fContato" action="mailto:adilson976431@gmail.com">
+			<fieldset id="usuario">
+	<legend>Identificação do Usuário</legend>
+		<p>Nome: <input type="text" name="tnome" id="cnome" size="20" maxlength="10" placeholder="nome completo"></p>
+		<p>Senha: <input type="password" name="tpassword" id="cpassword" size="8" maxlength="8" placeholder="password"></p>
+		<p>E-mail: <input type="email" name="temail" id="cemail" size="20" maxlength="20" placeholder="email"></p>
+		     <fieldset>
+				<legend>Sexo:</legend>
+			 <input type="radio" name="tsexo" id="cmasc" checked> <label for="cmasc">Masculino</label></br>
+			  <input type="radio" name="tsexo" id="cfemi"> <label for="cfemi">Feminino</label>
+			</fieldset>
+		<p>Data de Nascimento: <input type="date" name="tnasc" id="cnasc"></p>
+	</fieldset>
+	<fieldset id="endereco">
+		<legend>Endereço do Usuário</legend>
+		<p><label for="cRua">Logradouro:</label> 
+			<input type="text" name="trua" id="cRua" size="13" maxlength="80" placeholder="Rua, Av, trav"></p>
+		<p><label for="cnumero">Número:</label> 
+			<input type="number" name="tnumero" id="cnumero" min="0"  max="99999"></p>
+		<p> <label for="cEst">Estado:</label> 
+			<select name="tEst" id="cEst">
+				<optgroup label="Região Sul">
+					<option>Rio de Janeiro</option>
+				    <option>São Paulo</option>
+				</optgroup>
+				<optgroup label="Região Nordeste">
+				   <option>Sergipe</option>
+				   <option>Bahia</option>
+				   <option>Alagoas</option>
+				</optgroup>
+			</select></p>
+		<p> <label for="cCidade">Cidade:</label>
+			 <input type="text" name="tcid" id="cCidade" maxlength="40" list="cidades"></p>
+			 <datalist id="cidades">
+				<option value="Rio de Janeiro"></option>
+				<option value="Nova Iguacu"></option>
+				<option value="Niterio"></option>
+				<option value="Belford Roxo"></option>
+			 </datalist>
+	</fieldset>
+	<fieldset id="mensagem">
+		<legend>Mensagem do Usuário</legend>
+		<p> <label for="cUrg" >Grau de Urgência:</label>
+		<input type="range" name="tUrl" id="cUrl" min="0" max="10"></p>
+		<p><label for="cMsg">Mensagem:</label>
+		<textarea name="sMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe sua mensagem"></textarea></p>
+	</fieldset>
+	<fieldset id="pedido">
+		<legend>Quero um Google Glass</legend>
+		<p><label for="cPed" >Gostaria de adquirir um Google Glass quando disponível</label></p>
+		<p><label for="cCor" >Cor:</label></p>
+		<p><label for="cQtd" >Quantidade:</label></p>
+		<p><label for="cTot" >Preço Total: R$</label></p>
+	</fieldset>
+	
+	[BOTÃO ENVIAR]
+	</form>
+</article>
+</section>
+<footer id="rodape">
+	<p>Copyright 2013 - by Gustavo Guanabara</br>
+	<a href="http://facebook.com/cursoemvideo" target=" _blank">Facebook</a>|
+	<a href="http://twiter.com/cursoemvideo" target=" _blank">Twiter</a></p>
+	</footer>
+		 </div>
+		</body>
+</html>
 </body>
 </html>
