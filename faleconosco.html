@@ -48,8 +48,8 @@
 		   </hgroup>
 		  </header>
 		<form method="post" id="fContato" action="mailto:adilson976431@gmail.com" oninput="calc_total();">
-			<fieldset id="usuario">
-	<legend>Identificação do Usuário</legend>
+		<fieldset id="usuario">
+	   <legend>Identificação do Usuário</legend>
 		<p>Nome: <input type="text" name="tnome" id="cnome" size="20" maxlength="10" placeholder="nome completo"></p>
 		<p>Senha: <input type="password" name="tpassword" id="cpassword" size="8" maxlength="8" placeholder="password"></p>
 		<p>E-mail: <input type="email" name="temail" id="cemail" size="20" maxlength="20" placeholder="email"></p>
@@ -58,7 +58,10 @@
 			 <input type="radio" name="tsexo" id="cmasc" checked> <label for="cmasc">Masculino</label></br>
 			  <input type="radio" name="tsexo" id="cfemi"> <label for="cfemi">Feminino</label>
 			</fieldset>
+			<fieldset>
 		<p>Data de Nascimento: <input type="date" name="tnasc" id="cnasc"></p>
+	</fieldset>
+
 	</fieldset>
 	<fieldset id="endereco">
 		<legend>Endereço do Usuário</legend>
@@ -87,6 +90,7 @@
 				<option value="Belford Roxo"></option>
 			 </datalist>
 	</fieldset>
+
 	<fieldset id="mensagem">
 		<legend>Mensagem do Usuário</legend>
 		<p> <label for="cUrg" >Grau de Urgência:</label>
@@ -94,6 +98,7 @@
 		<p><label for="cMsg">Mensagem:</label>
 		<textarea name="sMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe sua mensagem"></textarea></p>
 	</fieldset>
+	
 	<fieldset id="pedido">
 		<legend>Quero um Google Glass</legend>
 		<p>
